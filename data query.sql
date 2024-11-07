@@ -38,3 +38,11 @@ SELECT AVG(salary) AS average_salary
 FROM instructor
 WHERE dept_name = 'Elec. Eng.';
 
+
+SELECT instructor.name, teaches.course_id
+FROM instructor
+JOIN teaches ON instructor.ID = teaches.ID;
+
+
+
+
